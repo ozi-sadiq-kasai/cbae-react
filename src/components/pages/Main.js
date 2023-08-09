@@ -40,7 +40,7 @@ function Main() {
 
   useEffect(() => {
     setMainMenu(getMainMenu);
-  }, []);
+  }, [mainMenu]);
 
     const renderMainInSection = (category) => {
     return mainMenu.map((main) => {
