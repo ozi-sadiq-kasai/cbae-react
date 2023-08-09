@@ -39,7 +39,7 @@ function Main() {
   };
 
   useEffect(() => {
-    getMainMenu();
+    setMainMenu(getMainMenu);
   }, []);
 
     const renderMainInSection = (category) => {

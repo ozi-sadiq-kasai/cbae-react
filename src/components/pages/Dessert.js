@@ -39,7 +39,7 @@ function Dessert() {
   };
 
   useEffect(() => {
-    getDessertMenu();
+    setDessertMenu(getDessertMenu );
   }, []);
 
     const renderDessertInSection = (category) => {

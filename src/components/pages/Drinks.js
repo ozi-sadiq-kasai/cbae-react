@@ -37,7 +37,7 @@ function Drinks() {
   };
 
   useEffect(() => {
-    getDrinksMenu();
+    setDrinksMenu(getDrinksMenu);
   }, []);
 
   const renderDrinksInSection = (category) => {
