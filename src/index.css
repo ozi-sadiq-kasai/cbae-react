@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica'; 
+}
+:root {
+  --navBlack: #222;
+  --navIcon:#CA1A2E;
+  --navDefault:gray;
+  --navActive:#C0D339;
+  --sectionItem: #252323;
+  --description:#595959; 
+}
+/* .top{
+ position:relative
+} */
+.scroll{
+ color: var(--navActive);
+ cursor:pointer;
+ position: fixed;
+ bottom: 80px;
+ right: 20px;
+ z-index: 999;
+}
+
+/* Logobar */
+.logo-bar-container{
+ background: var(--navBlack);
+ padding: 0 0  0 30px ;
+}
+.logo-bar{
+ padding: 7px 0;
+}
+.logo-logo {
+ width:60px;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: var(--navBlack);
+  z-index: 1;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-icons{
+ color:var(--navIcon);
+ height: auto;
+ width: 40%;
+ padding: 0.5rem 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+}
+.nav-links {
+ height: auto;
+ display: flex;
+}
+.nav-links a {
+ margin: 0 1rem;
+ padding: 0.5rem 0;
+ text-decoration: none;
+ color: #D21C30;
+}
+.nav-links a:is(:visited){
+    color:var(--navDefault);
+  }
+.nav-links a:is(:visited).active{
+    color:var(--navActive);
+  }
+
+/* Hero */
+.banner-image{
+ width: 100%;
+ vertical-align: top;
+ }
+/* Main */
+ .background{
+  background-image: url('../src/assets/background.jpg');
+  padding: 50px;
+  height: auto;
+ }
+/* Section */
+.sectionHeading{
+ color: var(--navIcon);
+ text-align: center;
+ margin-bottom: 15px; 
+}
+.sectionItem{
+ text-transform:'capitalize';
+ font-size: 1.2em;
+ color: var(--sectionItem);
+}
+.item{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.itemDescription{
+  width: 300px; 
+  overflow-wrap: break-word;
+  color: var(--description);
+  font-size: 1rem;
+}
+
+ /* MediaQueries */
+@media screen and (max-width:480px){
+  /* Main */
+ .background{
+  padding: 30px 20px 60px 20px;
+ }
+ .sectionItem{
+  width: 300px;
+  overflow-wrap: break-word;
+ }
+}
+
+@media only screen and (min-width:481px)and (max-width: 767px){
+.sectionItem{
+ font-size: 1.5em;
+}
+.price{
+ font-size: 1.25rem;
+}
+.itemDescription{
+ font-size: 1.15rem;
+}
+.sectionHeading{
+ font-size: 2rem;
+}
+#special{
+ width: 70%;
+ font-size: 2rem;
+ margin: 0 auto;
+ padding-bottom:10px;
+}
+.background{
+ padding: 50px 40px 70px ;
+}
+}
+ 
+
+
