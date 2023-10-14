@@ -40,7 +40,7 @@ function Dessert() {
 
   useEffect(() => {
     setDessertMenu(getDessertMenu);
-  }, [dessertMenu]);
+  }, []);
 
     const renderDessertInSection = (category) => {
     return dessertMenu.map((dessert) => {
